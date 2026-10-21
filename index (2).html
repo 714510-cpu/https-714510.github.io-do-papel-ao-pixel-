@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#073b2b">
+<meta name="description" content="Do Papel ao Pixel: matemática, sustentabilidade e tecnologia para refletir sobre o consumo de papel escolar.">
+<title>Do Papel ao Pixel | Matemática e Sustentabilidade</title>
+<style>
+:root{--forest:#073b2b;--deep:#03291f;--green:#176b46;--lime:#c8f36a;--cream:#f6f5e9;--paper:#fffef6;--ink:#15372a;--muted:#61756a;--line:#dce7d6;--shadow:0 18px 55px #03291f15}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:85px}body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6}a{color:inherit}button,input{font:inherit}.wrap{width:min(1140px,calc(100% - 40px));margin:auto}.nav{position:sticky;top:0;z-index:10;background:#073b2bf2;backdrop-filter:blur(12px);color:white;border-bottom:1px solid #ffffff1c}.navin{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{font-weight:900;letter-spacing:-.04em;font-size:1.1rem;text-decoration:none;display:flex;align-items:center;gap:10px}.brandmark{width:38px;height:38px;display:grid;place-items:center;background:var(--lime);color:var(--forest);border-radius:12px;font-size:1.25rem}.links{display:flex;gap:20px;align-items:center}.links a{font-size:.9rem;color:#e4f0e7;text-decoration:none}.links a:hover{color:var(--lime)}.menu{display:none;background:transparent;color:white;border:1px solid #ffffff50;border-radius:10px;padding:8px 11px}.hero{background:radial-gradient(ellipse at 80% 10%,#1d7650 0,transparent 36%),linear-gradient(135deg,var(--deep),var(--forest) 70%,#12563c);color:white;position:relative;overflow:hidden;padding:80px 0 72px}.hero:after{content:"";position:absolute;width:470px;height:470px;border:1px solid #c8f36a25;border-radius:50%;right:-140px;bottom:-280px;box-shadow:0 0 0 40px #c8f36a0a,0 0 0 80px #c8f36a08}.eyebrow{display:inline-flex;gap:8px;align-items:center;background:#c8f36a18;border:1px solid #c8f36a50;color:var(--lime);padding:7px 12px;border-radius:999px;font-size:.82rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase}.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:48px;position:relative;z-index:1}.hero h1{font-size:clamp(2.8rem,6vw,5.7rem);line-height:.98;letter-spacing:-.065em;margin:22px 0}.hero h1 span{color:var(--lime)}.hero p{max-width:650px;color:#d5e5da;font-size:1.12rem}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:13px;padding:13px 18px;font-weight:850;text-decoration:none;cursor:pointer;transition:.2s}.btn:hover{transform:translateY(-2px)}.primary{background:var(--lime);color:var(--deep)}.secondary{border:1px solid #ffffff55;color:white;background:#ffffff0c}.art{min-height:340px;min-width:0;display:flex;align-items:center;justify-content:center;position:relative;isolation:isolate;padding:58px 18px 48px}.paper-stack{width:min(100%,300px);height:220px;position:relative;flex:0 1 300px;transform:rotate(-5deg);z-index:1}.sheet{position:absolute;background:#fffef4;border-radius:14px;width:82%;height:82%;left:7%;top:4%;box-shadow:0 18px 35px #00190f45;border:1px solid #d8dfce}.sheet:nth-child(2){transform:translate(9px,9px) rotate(3deg);background:#e8eddb}.sheet:nth-child(3){transform:translate(18px,18px) rotate(6deg);background:#d5e4c6}.sheet:nth-child(4){transform:translate(27px,27px) rotate(9deg);background:#c7e2a4}.pixel{position:absolute;right:8%;bottom:28px;display:grid;grid-template-columns:repeat(4,18px);gap:6px;transform:rotate(10deg);z-index:2}.pixel i{width:18px;height:18px;background:var(--lime);border-radius:5px}.pixel i:nth-child(2n){opacity:.65}.pixel i:nth-child(3n){opacity:.25}.float-tag{position:absolute;z-index:3;max-width:calc(100% - 28px);background:var(--paper);color:var(--forest);padding:10px 14px;border-radius:13px;box-shadow:var(--shadow);font-weight:850;line-height:1.25;white-space:normal}.tag1{top:8px;left:8px}.tag2{bottom:5px;right:8px}.section{padding:78px 0}.section-head{max-width:730px;margin-bottom:32px}.kicker{color:var(--green);font-size:.8rem;font-weight:900;text-transform:uppercase;letter-spacing:.12em}.section h2{font-size:clamp(2rem,4vw,3.2rem);letter-spacing:-.045em;line-height:1.08;margin:9px 0 14px}.lead{color:var(--muted);font-size:1.05rem}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:var(--shadow)}.iconbox{width:48px;height:48px;border-radius:15px;background:#e8f5cf;display:grid;place-items:center;font-size:1.45rem;margin-bottom:16px}.card h3{margin:0 0 8px;font-size:1.15rem}.card p{margin:0;color:var(--muted)}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.step{padding:0 0 18px;border-radius:18px;background:#e9f0df;border:1px solid #d4e3c8;overflow:hidden}.step img{display:block;width:100%;height:142px;object-fit:cover;background:#dce7d6}.step .step-body{padding:0 17px}.step .num{margin-top:14px}.step h3{padding:0 17px}.step p{padding:0 17px}.step .photo-credit{font-size:.75rem;margin-top:12px}.step .photo-credit a{color:var(--green);text-decoration:underline;text-underline-offset:3px}.num{width:34px;height:34px;border-radius:50%;background:var(--forest);color:var(--lime);display:grid;place-items:center;font-weight:900;margin-bottom:12px}.step h3{font-size:1rem;margin:0 0 6px}.step p{font-size:.91rem;color:var(--muted);margin:0}.calculator{background:var(--forest);color:white;border-radius:28px;padding:clamp(22px,4vw,42px);display:grid;grid-template-columns:1fr 1fr;gap:34px;box-shadow:var(--shadow)}.calculator h2{margin-top:0}.calculator .lead{color:#cfe0d4}.field{margin:22px 0}.field-head{display:flex;justify-content:space-between;gap:10px;margin-bottom:7px;font-weight:750}.field output{color:var(--lime);font-weight:900}input[type=range]{width:100%;accent-color:var(--lime);cursor:pointer}.results{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-content:center}.result{background:#ffffff0c;border:1px solid #ffffff24;border-radius:17px;padding:19px}.result span{font-size:.82rem;color:#d0e2d6;display:block}.result strong{font-size:clamp(1.6rem,3vw,2.25rem);display:block;color:var(--lime);line-height:1.25;margin:8px 0}.notice{font-size:.82rem;color:#c7d9cd;margin-top:15px}.barwrap{height:10px;background:#ffffff24;border-radius:99px;overflow:hidden;margin-top:8px}.bar{height:100%;width:80%;background:var(--lime);border-radius:99px}.quizbox{display:grid;grid-template-columns:.8fr 1.2fr;gap:24px;align-items:start}.quizintro{background:#e6f1d6;border-radius:22px;padding:25px}.quizintro .big{font-size:3rem}.question{font-size:1.1rem;font-weight:850;margin:0 0 15px}.answers{display:grid;gap:10px}.answer{padding:13px 15px;text-align:left;background:white;border:1px solid var(--line);border-radius:12px;cursor:pointer;color:var(--ink)}.answer:hover{border-color:var(--green)}.answer.correct{border-color:#20834f;background:#e5f6e8}.answer.wrong{border-color:#c85a4b;background:#fff0ec}.feedback{min-height:28px;margin-top:13px;font-weight:750}.quizfooter{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:18px}.pill{display:inline-flex;background:#e7f3d9;color:var(--forest);border-radius:999px;padding:6px 11px;font-size:.82rem;font-weight:850}.tech{background:#edf2e4}.techgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.techcard{background:#fffef8;border-radius:18px;padding:23px;border:1px solid var(--line)}.techcard .symbol{font-size:1.8rem}.evidence{display:grid;grid-template-columns:1fr 1fr;gap:20px}.evidence article{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:25px}.evidence ul{padding-left:20px;color:var(--muted)}
+.adoption{background:linear-gradient(180deg,#f5f6e9,#e9f1df)}
+.plan{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}
+.planstep{display:grid;grid-template-columns:48px 1fr;gap:15px;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:20px}
+.planstep .num{margin:0}
+.planstep h3{margin:0 0 5px}
+.planstep p{margin:0;color:var(--muted);font-size:.94rem}
+.planstep small{display:inline-block;color:var(--green);font-weight:850;text-transform:uppercase;letter-spacing:.06em;margin-bottom:5px}
+.checklist{display:grid;gap:10px;margin-top:18px}
+.checkitem{display:flex;gap:11px;align-items:flex-start;background:#ffffffb8;border:1px solid var(--line);padding:13px 15px;border-radius:12px}
+.checkitem input{margin-top:5px;accent-color:var(--green);width:18px;height:18px;flex-shrink:0}
+.checkitem span{flex:1}
+.plan-tools{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+@media(max-width:700px){.plan{grid-template-columns:1fr}}
+.warning{border-left:4px solid #c3e95e;padding:12px 15px;background:#eff6df;border-radius:0 12px 12px 0;color:#345541;font-size:.92rem}.cta{background:linear-gradient(135deg,#0b4a34,#03291f);color:white;border-radius:26px;padding:36px;display:flex;justify-content:space-between;gap:25px;align-items:center}.cta h2{margin:0 0 8px}.cta p{color:#d0e0d5;margin:0;max-width:650px}footer{margin-top:70px;background:var(--deep);color:#d9e8de;padding:35px 0}.foot{display:flex;justify-content:space-between;gap:20px;align-items:center}.foot small{color:#a8c1b1}.top{position:fixed;bottom:20px;right:20px;width:45px;height:45px;border-radius:50%;border:0;background:var(--lime);color:var(--forest);font-weight:900;box-shadow:var(--shadow);cursor:pointer}
+@media(max-width:850px){.links{display:none;position:absolute;top:72px;left:0;right:0;background:var(--forest);padding:18px 22px;flex-direction:column;align-items:flex-start}.links.open{display:flex}.menu{display:block}.hero-grid,.calculator,.quizbox,.evidence{grid-template-columns:minmax(0,1fr);gap:28px}.hero-grid>div:first-child{min-width:0}.art{width:100%;min-width:0;min-height:300px;padding:55px 12px 50px}.paper-stack{width:min(76vw,300px)}.tag1{left:2px}.tag2{right:2px}.grid3,.techgrid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.results{grid-template-columns:1fr 1fr}}
+@media print{.nav,.hero,.top,.plan-tools,footer{display:none!important}.section{padding:18px 0}.adoption{background:white}.planstep,.checkitem{break-inside:avoid;box-shadow:none}.plan{grid-template-columns:1fr 1fr}.wrap{width:100%}body{background:white}.section-head h2{font-size:24px}}\n@media(max-width:540px){.wrap{width:min(100% - 28px,1140px)}.hero{padding:48px 0 42px}.hero h1{font-size:clamp(2.8rem,14vw,4.3rem)}.art{min-height:270px;padding:52px 4px 46px}.paper-stack{width:min(72vw,260px);height:185px}.float-tag{font-size:.82rem;padding:9px 11px}.pixel{grid-template-columns:repeat(4,15px);gap:5px;right:6%;bottom:24px}.pixel i{width:15px;height:15px}.grid3,.techgrid,.steps{grid-template-columns:1fr}.section{padding:55px 0}.calculator{padding:22px}.results{grid-template-columns:1fr 1fr}.result{padding:14px}.cta,.foot{flex-direction:column;align-items:flex-start}}
+</style>
+</head>
+<body>
+<header class="nav">
+ <div class="wrap navin">
+  <a class="brand" href="#inicio"><span class="brandmark">↗</span> DO PAPEL AO PIXEL</a>
+  <button class="menu" id="menuBtn" aria-label="Abrir menu">☰</button>
+  <nav class="links" id="links">
+   <a href="#projeto">Projeto</a><a href="#jornada">Produção do papel</a><a href="#calculadora">Calculadora</a><a href="#desafio">Quiz</a><a href="#tecnologia">Tecnologia</a><a href="#resultados">Evidências</a><a href="#adotar">Adote o projeto</a>
+  </nav>
+ </div>
+</header>
+<main>
+<section class="hero" id="inicio">
+ <div class="wrap hero-grid">
+  <div>
+   <span class="eyebrow">✦ Matemática • Sustentabilidade • Tecnologia</span>
+   <h1>Do papel<br>ao <span>pixel.</span></h1>
+   <p>Uma investigação sobre o consumo de papel escolar e como a matemática e as ferramentas digitais podem ajudar a pensar em escolhas mais sustentáveis.</p>
+   <p><strong>E.E.B. Lindo Sardagna · Dona Emma, SC · 2026</strong></p>
+   <div class="actions"><a class="btn primary" href="#calculadora">Experimente a calculadora ↘</a><a class="btn secondary" href="#projeto">Conheça o projeto</a></div>
+  </div>
+  <div class="art" aria-label="Ilustração de folhas de papel transformando-se em pixels">
+   <span class="float-tag tag1">🌱 Menos desperdício</span><span class="float-tag tag2">▦ Aprendizagem digital</span>
+   <div class="paper-stack"><div class="sheet"></div><div class="sheet"></div><div class="sheet"></div><div class="sheet"></div></div>
+   <div class="pixel"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  </div>
+ </div>
+</section>
+<section class="section" id="projeto">
+ <div class="wrap">
+  <div class="section-head"><div class="kicker">01 · A investigação</div><h2>Uma folha parece simples.<br>Seu ciclo não é.</h2><p class="lead">O projeto convida a comunidade escolar a refletir sobre o uso do papel: da produção ao descarte, passando pelas oportunidades de evitar impressões desnecessárias.</p></div>
+  <div class="grid3">
+   <article class="card"><div class="iconbox">🔎</div><h3>Investigar</h3><p>Observar hábitos de consumo de papel e identificar onde pode haver desperdício na rotina escolar.</p></article>
+   <article class="card"><div class="iconbox">∑</div><h3>Quantificar</h3><p>Usar multiplicação, proporcionalidade e estimativas para calcular cenários de consumo.</p></article>
+   <article class="card"><div class="iconbox">♻️</div><h3>Propor alternativas</h3><p>Explorar recursos digitais quando forem adequados, mantendo o papel quando ele for necessário para aprender.</p></article>
+  </div>
+ </div>
+</section>
+<section class="section" id="jornada" style="background:#eef2e5">
+ <div class="wrap">
+  <div class="section-head"><div class="kicker">02 · Da matéria-prima ao produto</div><h2>A jornada de uma folha</h2><p class="lead">Conheça, de forma resumida, algumas etapas comuns da fabricação do papel. Os processos variam conforme o tipo de papel e a indústria.</p></div>
+  <div class="steps">
+   <article class="step"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Trees14%20(24212675417).jpg" alt="Floresta com árvores, representando a matéria-prima vegetal" loading="lazy"><div class="step-body"><div class="num">1</div><h3>Matéria-prima</h3><p>A madeira ou outras fibras vegetais fornecem a celulose usada na fabricação.</p><p class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:Trees14_(24212675417).jpg" target="_blank" rel="noopener noreferrer">Ver imagem e créditos no Wikimedia Commons ↗</a></p></div></article>
+   <article class="step"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Paper%20mill%20wood-chip%20stockpile.jpg" alt="Pilha de cavacos de madeira em uma fábrica de papel" loading="lazy"><div class="step-body"><div class="num">2</div><h3>Preparação</h3><p>A madeira é descascada e transformada em cavacos para facilitar a separação das fibras.</p><p class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:Paper_mill_wood-chip_stockpile.jpg" target="_blank" rel="noopener noreferrer">Ver imagem e créditos no Wikimedia Commons ↗</a></p></div></article>
+   <article class="step"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pulper.jpg" alt="Equipamento industrial usado no processamento da polpa" loading="lazy"><div class="step-body"><div class="num">3</div><h3>Polpação</h3><p>Processos mecânicos e/ou químicos separam as fibras para formar a polpa.</p><p class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:Pulper.jpg" target="_blank" rel="noopener noreferrer">Ver imagem e créditos no Wikimedia Commons ↗</a></p></div></article>
+   <article class="step"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Fibersorter.JPG" alt="Equipamento de classificação e limpeza de fibras" loading="lazy"><div class="step-body"><div class="num">4</div><h3>Limpeza e branqueamento</h3><p>A polpa pode passar por limpeza e, dependendo do produto, branqueamento.</p><p class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:Fibersorter.JPG" target="_blank" rel="noopener noreferrer">Ver imagem e créditos no Wikimedia Commons ↗</a></p></div></article>
+   <article class="step"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tela%20maquina%20de%20papel.jpg" alt="Tela de uma máquina de fabricação de papel" loading="lazy"><div class="step-body"><div class="num">5</div><h3>Formação da folha</h3><p>As fibras se distribuem em uma tela e formam uma folha úmida.</p><p class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:Tela_maquina_de_papel.jpg" target="_blank" rel="noopener noreferrer">Ver imagem e créditos no Wikimedia Commons ↗</a></p></div></article>
+   <article class="step"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Secheurs.png" alt="Ilustração técnica da etapa de secagem do papel" loading="lazy"><div class="step-body"><div class="num">6</div><h3>Secagem</h3><p>A água é removida para que a folha alcance as propriedades desejadas.</p><p class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:Secheurs.png" target="_blank" rel="noopener noreferrer">Ver imagem e créditos no Wikimedia Commons ↗</a></p></div></article>
+   <article class="step"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Paper-roller-Burnie-20150207-004.jpg" alt="Grandes rolos de papel em uma fábrica" loading="lazy"><div class="step-body"><div class="num">7</div><h3>Acabamento</h3><p>O papel é enrolado ou cortado, conferido e preparado para distribuição.</p><p class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:Paper-roller-Burnie-20150207-004.jpg" target="_blank" rel="noopener noreferrer">Ver imagem e créditos no Wikimedia Commons ↗</a></p></div></article>
+   <article class="step"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Paper%20cutting%20machinery.jpg" alt="Máquina de corte de papel; a etapa final antes da distribuição" loading="lazy"><div class="step-body"><div class="num">8</div><h3>Uso, reutilização e reciclagem</h3><p>Na escola, podemos usar com consciência, reutilizar folhas quando possível e encaminhá-las para reciclagem quando disponível.</p><p class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:Paper_cutting_machinery.jpg" target="_blank" rel="noopener noreferrer">Ver imagem e créditos no Wikimedia Commons ↗</a></p></div></article>
+  </div>
+ </div>
+</section>
+<section class="section" id="calculadora">
+ <div class="wrap">
+  <div class="section-head"><div class="kicker">03 · Matemática em ação</div><h2>Faça sua própria simulação</h2><p class="lead">Mude os valores e observe como o consumo anual estimado e a meta de redução se alteram.</p></div>
+  <div class="calculator">
+   <div>
+    <h2>Calculadora de consumo</h2><p class="lead">Os valores iniciais são um cenário ilustrativo alinhado às premissas usadas no projeto. Ajuste-os para explorar outras realidades.</p>
+    <div class="field"><div class="field-head"><label for="students">Número de alunos</label><output id="studentsOut">300</output></div><input id="students" type="range" min="50" max="1000" step="50" value="300"></div>
+    <div class="field"><div class="field-head"><label for="sheets">Folhas por aluno por dia</label><output id="sheetsOut">2</output></div><input id="sheets" type="range" min="0" max="10" step="1" value="2"></div>
+    <div class="field"><div class="field-head"><label for="days">Dias letivos no ano</label><output id="daysOut">200</output></div><input id="days" type="range" min="100" max="220" step="10" value="200"></div>
+    <div class="field"><div class="field-head"><label for="reduction">Meta de redução</label><output id="reductionOut">80%</output></div><input id="reduction" type="range" min="0" max="100" step="10" value="80"></div>
+   </div>
+   <div>
+    <div class="results">
+     <div class="result"><span>Consumo anual estimado</span><strong id="annual">120.000</strong><span>folhas</span></div>
+     <div class="result"><span>Economia potencial</span><strong id="saved">96.000</strong><span>folhas/ano</span></div>
+     <div class="result"><span>Água associada à economia*</span><strong id="water">960.000 L</strong><span>estimativa do modelo</span></div>
+     <div class="result"><span>Árvores equivalentes*</span><strong id="trees">9,6</strong><span>estimativa do modelo</span></div>
+    </div>
+    <div style="margin-top:24px"><div class="field-head"><span>Meta de redução selecionada</span><strong id="percent">80%</strong></div><div class="barwrap"><div class="bar" id="bar"></div></div></div>
+    <p class="notice">* Para fins didáticos, o modelo considera 10 litros de água por folha e 10.000 folhas por árvore equivalente. São premissas simplificadas do projeto, não fatores universais nem medições diretas. A economia real depende do consumo medido e das condições de produção.</p>
+   </div>
+  </div>
+ </div>
+</section>
+<section class="section" id="desafio">
+ <div class="wrap">
+  <div class="section-head"><div class="kicker">04 · Aprenda participando</div><h2>Desafio sustentável</h2><p class="lead">Teste seus conhecimentos sobre o projeto e veja sua pontuação.</p></div>
+  <div class="quizbox">
+   <aside class="quizintro"><div class="big">🌿</div><h3>Pequenas escolhas, grandes perguntas.</h3><p>Responda às perguntas. O objetivo é aprender, não apenas acertar.</p><span class="pill" id="scorePill">Pontuação: 0</span></aside>
+   <article class="card" id="quizCard"><div class="field-head"><span class="pill" id="qCount">Pergunta 1 de 5</span><span id="qScore">0 pontos</span></div><p class="question" id="question"></p><div class="answers" id="answers"></div><div class="feedback" id="feedback" aria-live="polite"></div><div class="quizfooter"><button class="btn secondary" id="restartQuiz" style="color:var(--forest);border-color:var(--line);display:none">Recomeçar</button><button class="btn primary" id="nextQuiz" disabled>Próxima pergunta →</button></div></article>
+  </div>
+ </div>
+</section>
+<section class="section tech" id="tecnologia">
+ <div class="wrap">
+  <div class="section-head"><div class="kicker">05 · Tecnologia com propósito</div><h2>Do impresso ao acesso digital</h2><p class="lead">Tecnologia é uma alternativa quando reduz impressões desnecessárias e atende ao objetivo pedagógico. O melhor formato depende da atividade e da realidade de cada estudante.</p></div>
+  <div class="techgrid">
+   <article class="techcard"><div class="symbol">▦</div><h3>QR Codes</h3><p>Direcionam a materiais, instruções ou páginas do projeto sem precisar imprimir uma cópia para cada pessoa.</p></article>
+   <article class="techcard"><div class="symbol">☷</div><h3>Formulários digitais</h3><p>Podem apoiar questionários, coleta de opiniões e registros de respostas quando houver acesso adequado.</p></article>
+   <article class="techcard"><div class="symbol">▤</div><h3>Materiais compartilhados</h3><p>Arquivos digitais podem ser acessados por vários estudantes, evitando impressões repetidas quando isso fizer sentido.</p></article>
+  </div>
+ </div>
+</section>
+<section class="section" id="resultados">
+ <div class="wrap">
+  <div class="section-head"><div class="kicker">06 · Transparência científica</div><h2>Hipóteses, dados e resultados</h2><p class="lead">Uma investigação fica mais forte quando explica de onde vêm os números e distingue o que foi medido do que foi estimado.</p></div>
+  <div class="evidence">
+   <article><div class="iconbox">📊</div><h3>O que registrar</h3><ul><li>Quantidade de folhas usadas em um período definido.</li><li>Número de estudantes ou turmas incluídos na observação.</li><li>Quais atividades foram substituídas por alternativas digitais.</li><li>Comparação entre períodos equivalentes, quando houver dados.</li></ul></article>
+   <article><div class="iconbox">🧪</div><h3>Como interpretar</h3><ul><li>Apresente os cálculos e as unidades de medida.</li><li>Informe as fontes ou hipóteses de cada fator ambiental.</li><li>Não apresente projeções como se fossem economias já observadas.</li><li>Considere acesso à internet, acessibilidade e necessidades pedagógicas.</li></ul></article>
+  </div>
+  <div class="warning" style="margin-top:18px"><strong>Importante:</strong> as estimativas ambientais exibidas na calculadora são baseadas nas premissas didáticas indicadas. Para afirmar uma redução real, é necessário medir o consumo de papel antes e depois da intervenção.</div>
+ </div>
+</section>
+
+<section class="section adoption" id="adotar">
+ <div class="wrap">
+  <div class="section-head"><div class="kicker">07 · Compartilhe e replique</div><h2>Leve o projeto para a sua escola</h2>
+   <p class="lead">Sua escola também pode investigar o consumo de papel e desenvolver ações sustentáveis. Este roteiro é um ponto de partida: adapte as etapas à realidade, aos recursos e às necessidades dos estudantes.</p>
+  </div>
+  <div class="plan">
+   <article class="planstep"><div class="num">1</div><div><small>Semana 1 · Planejamento</small><h3>Forme a equipe</h3><p>Convide professores, estudantes e equipe gestora. Definam o problema, os objetivos, as turmas participantes e quem ficará responsável por cada tarefa.</p></div></article>
+   <article class="planstep"><div class="num">2</div><div><small>Semana 1 · Diagnóstico</small><h3>Descubra como o papel é usado</h3><p>Registrem por um período definido a quantidade de folhas impressas ou distribuídas. Anotem o período, as fontes dos dados e as limitações da contagem.</p></div></article>
+   <article class="planstep"><div class="num">3</div><div><small>Semana 2 · Matemática</small><h3>Organize os dados</h3><p>Construam tabelas e gráficos, calculem médias e totais e expliquem as operações. Diferenciem dados medidos de estimativas e deixem claras as hipóteses utilizadas.</p></div></article>
+   <article class="planstep"><div class="num">4</div><div><small>Semana 2 · Soluções</small><h3>Escolha ações viáveis</h3><p>Considerem impressão frente e verso, reutilização de folhas, revisão antes de imprimir e compartilhamento digital quando houver acesso e fizer sentido pedagógico.</p></div></article>
+   <article class="planstep"><div class="num">5</div><div><small>Semanas 3–6 · Ação</small><h3>Teste as mudanças</h3><p>Implementem as ações escolhidas por um período combinado. Comuniquem as orientações com cartazes, QR Codes ou outros meios acessíveis à comunidade escolar.</p></div></article>
+   <article class="planstep"><div class="num">6</div><div><small>Depois do teste · Avaliação</small><h3>Compare os resultados</h3><p>Meçam novamente o consumo usando um período comparável. Calculem a diferença, registrem o que funcionou e reconheçam fatores que possam ter influenciado os dados.</p></div></article>
+   <article class="planstep"><div class="num">7</div><div><small>Compartilhamento</small><h3>Apresente a investigação</h3><p>Preparem pôster, apresentação ou site com pergunta de pesquisa, método, dados, cálculos, resultados, limitações e próximos passos.</p></div></article>
+   <article class="planstep"><div class="num">8</div><div><small>Continuidade</small><h3>Mantenha o acompanhamento</h3><p>Definam uma meta realista e revisem os dados periodicamente. A meta deve incentivar melhorias sem impedir o uso de papel quando necessário.</p></div></article>
+  </div>
+  <div class="section-head" style="margin:35px 0 15px"><h2 style="font-size:1.7rem">Checklist para começar</h2><p class="lead">Marque as tarefas conforme sua equipe avançar. A lista funciona neste navegador e não envia dados para lugar algum.</p></div>
+  <div class="checklist" id="adoptionChecklist">
+   <label class="checkitem"><input type="checkbox"><span>Definimos a equipe e as responsabilidades.</span></label>
+   <label class="checkitem"><input type="checkbox"><span>Escolhemos o período e o método para medir o uso de papel.</span></label>
+   <label class="checkitem"><input type="checkbox"><span>Registramos os dados iniciais antes de aplicar as mudanças.</span></label>
+   <label class="checkitem"><input type="checkbox"><span>Escolhemos ações acessíveis e adequadas às turmas.</span></label>
+   <label class="checkitem"><input type="checkbox"><span>Definimos quando e como vamos medir novamente.</span></label>
+   <label class="checkitem"><input type="checkbox"><span>Planejamos como compartilhar os resultados e suas limitações.</span></label>
+  </div>
+  <div class="plan-tools"><button class="btn primary" id="printPlan">Imprimir / salvar plano em PDF</button><button class="btn secondary" id="clearChecklist" style="color:var(--forest);border-color:var(--line)">Desmarcar checklist</button></div>
+  <p class="notice" style="color:var(--muted)">Sugestão de cronograma, não uma exigência: adapte a duração conforme o calendário escolar. Não é necessário substituir todas as atividades impressas; a proposta é reduzir desperdícios com responsabilidade e avaliar o que realmente funciona.</p>
+ </div>
+</section>
+
+<section class="section" style="padding-top:0">
+ <div class="wrap"><div class="cta"><div><h2>Uma folha economizada começa com uma escolha.</h2><p>Conheça o projeto, experimente os cálculos e pense em como a sua escola pode usar papel com mais consciência.</p></div><a class="btn primary" href="#inicio">Voltar ao início ↑</a></div></div>
+</section>
+</main>
+<footer><div class="wrap foot"><div><strong>DO PAPEL AO PIXEL</strong><br><small>Matemática e Sustentabilidade na Redução do Consumo de Papel Escolar</small></div><div><strong>E.E.B. Lindo Sardagna</strong><br><small>Dona Emma – SC · 2026</small></div></div></footer>
+<button class="top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Voltar ao topo">↑</button>
+<script>
+const $=id=>document.getElementById(id);
+$('printPlan').addEventListener('click',()=>window.print());
+$('clearChecklist').addEventListener('click',()=>document.querySelectorAll('#adoptionChecklist input').forEach(c=>c.checked=false));
+
+const fmt=n=>Math.round(n).toLocaleString('pt-BR');
+function updateCalc(){
+ const students=+$('students').value,sheets=+$('sheets').value,days=+$('days').value,red=+$('reduction').value;
+ const annual=students*sheets*days,saved=annual*red/100;
+ $('studentsOut').textContent=fmt(students);$('sheetsOut').textContent=sheets;$('daysOut').textContent=days;$('reductionOut').textContent=red+'%';
+ $('annual').textContent=fmt(annual);$('saved').textContent=fmt(saved);$('water').textContent=fmt(saved*10)+' L';$('trees').textContent=(saved/10000).toLocaleString('pt-BR',{maximumFractionDigits:1});$('percent').textContent=red+'%';$('bar').style.width=red+'%';
+}
+['students','sheets','days','reduction'].forEach(id=>$(id).addEventListener('input',updateCalc));updateCalc();
+$('menuBtn').addEventListener('click',()=>$('links').classList.toggle('open'));
+document.querySelectorAll('#links a').forEach(a=>a.addEventListener('click',()=>$('links').classList.remove('open')));
+const questions=[
+ {q:'Qual é o objetivo principal do projeto?',a:['Eliminar todo o uso de papel na escola','Investigar o consumo de papel e explorar formas de reduzir impressões desnecessárias','Trocar todas as aulas por celulares'],correct:1,why:'O projeto investiga o consumo e considera alternativas digitais quando adequadas.'},
+ {q:'Se 300 alunos usam 2 folhas por dia durante 200 dias, qual é o consumo anual estimado?',a:['12.000 folhas','60.000 folhas','120.000 folhas'],correct:2,why:'300 × 2 × 200 = 120.000 folhas.'},
+ {q:'O que significa uma projeção de economia de 80%?',a:['É uma meta ou cenário calculado, não necessariamente um resultado medido','Que a escola já economizou exatamente 80%','Que toda atividade precisa ser digital'],correct:0,why:'Uma projeção é uma estimativa. Para confirmar o resultado, é preciso medir o consumo.'},
+ {q:'Quando uma alternativa digital pode ajudar a reduzir o uso de papel?',a:['Sempre, independentemente da situação','Quando substitui impressões desnecessárias e atende à necessidade pedagógica','Somente quando todos compram um aparelho novo'],correct:1,why:'A tecnologia deve ser adequada à atividade e considerar o acesso dos estudantes.'},
+ {q:'Por que precisamos explicar as hipóteses usadas nos cálculos ambientais?',a:['Para tornar os resultados verificáveis e não confundir estimativas com medições','Para evitar mostrar as contas','Porque as estimativas são sempre exatas'],correct:0,why:'Transparência sobre hipóteses e limites é parte da investigação científica.'}
+];
+let qi=0,score=0,answered=false;
+function renderQuestion(){
+ answered=false;$('feedback').textContent='';$('nextQuiz').disabled=true;$('nextQuiz').textContent=qi===questions.length-1?'Ver resultado ✓':'Próxima pergunta →';
+ $('qCount').textContent=`Pergunta ${qi+1} de ${questions.length}`;$('question').textContent=questions[qi].q;$('qScore').textContent=score+' pontos';$('scorePill').textContent='Pontuação: '+score;$('answers').innerHTML='';
+ questions[qi].a.forEach((answer,i)=>{const b=document.createElement('button');b.className='answer';b.textContent=answer;b.addEventListener('click',()=>chooseAnswer(i,b));$('answers').appendChild(b)});
+ $('restartQuiz').style.display=qi===questions.length?'inline-flex':'none';
+}
+function chooseAnswer(i,btn){if(answered)return;answered=true;const q=questions[qi];[...$('answers').children].forEach((b,j)=>{b.disabled=true;if(j===q.correct)b.classList.add('correct')});if(i===q.correct){score++;btn.classList.add('correct');$('feedback').textContent='Correto! '+q.why}else{$('feedback').textContent='Ainda não. '+q.why;btn.classList.add('wrong')}$('nextQuiz').disabled=false;$('qScore').textContent=score+' pontos';$('scorePill').textContent='Pontuação: '+score}
+$('nextQuiz').addEventListener('click',()=>{if(qi<questions.length-1){qi++;renderQuestion()}else{qi=questions.length;$('qCount').textContent='Desafio concluído';$('question').textContent=`Você acertou ${score} de ${questions.length} perguntas!`; $('answers').innerHTML='';$('feedback').textContent=score===questions.length?'Excelente! Você domina os conceitos principais.':'Obrigado por participar! Revise as seções e tente novamente.';$('nextQuiz').disabled=true;$('restartQuiz').style.display='inline-flex';$('scorePill').textContent='Pontuação final: '+score}});
+$('restartQuiz').addEventListener('click',()=>{qi=0;score=0;renderQuestion()});renderQuestion();
+</script>
+</body>
+</html>
